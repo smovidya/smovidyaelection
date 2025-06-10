@@ -22,32 +22,32 @@ import Image from "astro/components/Image.astro";
       <hr class="my-6 border-gray-300" />
 
       <form method="POST" action="/api/submit-vote" class="vote-form">
-        <!-- President -->
-        <section id="president" class="mb-12">
-          <h3 class="text-xl font-semibold">ตำแหน่งนายกสโมสร</h3>
+        <!-- Lekha -->
+        <section id="secretary" class="mb-12">
+          <h3 class="text-xl font-semibold">ตำแหน่งเลขานุการ</h3>
           <p class="text-gray-600 mb-6">
             กรุณาเลือก รับรอง ไม่รับรอง หรืองดออกเสียง
           </p>
 
           <div class="flex h-32 mb-6 gap-1">
             <div
-              class="flex flex-col w-1/5 items-center justify-center bg-purple-100 shadow-lg"
+              class="flex flex-col w-1/5 items-center justify-center bg-orange-200 shadow-lg"
             >
-              <span class="text-sm font-bold text-purple-900">หมายเลข</span>
-              <span class="text-2xl font-bold text-purple-900">1</span>
+              <span class="text-sm font-bold text-orange-900">หมายเลข</span>
+              <span class="text-2xl font-bold text-orange-900">1</span>
             </div>
 
             <div class="p-3 w-3/5 bg-white shadow-lg">
-              <p class="font-bold text-sm">พรรค Sci-Served</p>
-              <p class="font-bold text-sm">นายจามิน จันทรสุวรรณ</p>
+              <p class="font-bold text-sm">พรรค Sci-pernova</p>
+              <p class="font-bold text-sm">นายอนุชา สร้อยแสง</p>
               <br />
               <p class="text-gray-600 text-xs">
-                ภาควิชาคณิตศาสตร์และคอมพิวเตอร์
+                ภาควิชาเคมี
               </p>
               <p class="text-gray-600 text-xs">ชั้นปีที่ 3</p>
             </div>
             <Image
-              src="/images/01_นายก.webp"
+              src="/images/09_เลขา.jpg"
               alt="Candidate"
               class="object-cover shadow-lg bg-white"
               height={32}
@@ -59,7 +59,7 @@ import Image from "astro/components/Image.astro";
             <label class="flex items-center space-x-3">
               <input
                 type="radio"
-                name="president"
+                name="secretary"
                 value="approve"
                 class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
                 required
@@ -69,7 +69,7 @@ import Image from "astro/components/Image.astro";
             <label class="flex items-center space-x-3">
               <input
                 type="radio"
-                name="president"
+                name="secretary"
                 value="disapprove"
                 class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
               />
@@ -78,7 +78,7 @@ import Image from "astro/components/Image.astro";
             <label class="flex items-center space-x-3">
               <input
                 type="radio"
-                name="president"
+                name="secretary"
                 value="abstain"
                 class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
               />
@@ -88,30 +88,30 @@ import Image from "astro/components/Image.astro";
         </section>
         <hr class="my-8 border-gray-300" />
 
-        <!-- Vice President 1 -->
-        <section id="vice1" class="mb-12">
-          <h3 class="text-xl font-semibold">ตำแหน่งอุปนายกคนที่ 1</h3>
+        <!--Art -->
+        <section id="art" class="mb-12">
+          <h3 class="text-xl font-semibold">ตำแหน่งประธานฝ่ายศิลปะและวัฒนธรรม</h3>
           <p class="text-gray-600 mb-6">
             กรุณาเลือก รับรอง ไม่รับรอง หรืองดออกเสียง
           </p>
 
           <div class="flex h-32 mb-6 gap-1">
             <div
-              class="flex flex-col w-1/5 items-center justify-center bg-purple-100 shadow-lg"
+              class="flex flex-col w-1/5 items-center justify-center bg-orange-200 shadow-lg"
             >
-              <span class="text-sm font-bold text-purple-900">หมายเลข</span>
-              <span class="text-2xl font-bold text-purple-900">1</span>
+              <span class="text-sm font-bold text-orange-900">หมายเลข</span>
+              <span class="text-2xl font-bold text-orange-900">1</span>
             </div>
 
             <div class="p-3 w-3/5 bg-white shadow-lg">
-              <p class="font-bold text-sm">พรรค Sci-Served</p>
-              <p class="font-bold text-sm">นายกิตติพัศ สิริเจิมจิตร</p>
+              <p class="font-bold text-sm">พรรค Sci-pernova</p>
+              <p class="font-bold text-sm">นางสาวณิชาภัทร ขอนแก่น</p>
               <br />
-              <p class="text-gray-600 text-xs">ภาควิชาจุลชีววิทยา</p>
+              <p class="text-gray-600 text-xs">ภาควิชาชีววิทยา</p>
               <p class="text-gray-600 text-xs">ชั้นปีที่ 3</p>
             </div>
             <Image
-              src="/images/02_อุป 1.webp"
+              src="/images/09_สินวัต.JPEG"
               alt="Candidate"
               class="object-cover shadow-lg bg-white"
               height={32}
@@ -123,7 +123,7 @@ import Image from "astro/components/Image.astro";
             <label class="flex items-center space-x-3">
               <input
                 type="radio"
-                name="vice1"
+                name="art"
                 value="approve"
                 class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
                 required
@@ -133,7 +133,7 @@ import Image from "astro/components/Image.astro";
             <label class="flex items-center space-x-3">
               <input
                 type="radio"
-                name="vice1"
+                name="art"
                 value="disapprove"
                 class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
               />
@@ -142,397 +142,7 @@ import Image from "astro/components/Image.astro";
             <label class="flex items-center space-x-3">
               <input
                 type="radio"
-                name="vice1"
-                value="abstain"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-              />
-              <span class="text-gray-700">งดออกเสียง</span>
-            </label>
-          </div>
-        </section>
-        <hr class="my-8 border-gray-300" />
-
-        <!-- Vice President 2 -->
-        <section id="vice2" class="mb-12">
-          <h3 class="text-xl font-semibold">ตำแหน่งอุปนายกคนที่ 2</h3>
-          <p class="text-gray-600 mb-6">
-            กรุณาเลือก รับรอง ไม่รับรอง หรืองดออกเสียง
-          </p>
-
-          <div class="flex h-32 mb-6 gap-1">
-            <div
-              class="flex flex-col w-1/5 items-center justify-center bg-purple-100 shadow-lg"
-            >
-              <span class="text-sm font-bold text-purple-900">หมายเลข</span>
-              <span class="text-2xl font-bold text-purple-900">1</span>
-            </div>
-
-            <div class="p-3 w-3/5 bg-white shadow-lg">
-              <p class="font-bold text-sm">พรรค Sci-Served</p>
-              <p class="font-bold text-sm">นางสาวเอมอร พรมเพ็ง</p>
-              <br />
-              <p class="text-gray-600 text-xs">
-                ภาควิชาคณิตศาสตร์และคอมพิวเตอร์
-              </p>
-              <p class="text-gray-600 text-xs">ชั้นปีที่ 3</p>
-            </div>
-            <Image
-              src="/images/03_อุป 2.webp"
-              alt="Candidate"
-              class="object-cover shadow-lg bg-white"
-              height={32}
-              width={96}
-            />
-          </div>
-
-          <div class="space-y-2">
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="vice2"
-                value="approve"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-                required
-              />
-              <span class="text-gray-700">รับรอง</span>
-            </label>
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="vice2"
-                value="disapprove"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-              />
-              <span class="text-gray-700">ไม่รับรอง</span>
-            </label>
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="vice2"
-                value="abstain"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-              />
-              <span class="text-gray-700">งดออกเสียง</span>
-            </label>
-          </div>
-        </section>
-        <hr class="my-8 border-gray-300" />
-
-        <!-- Head of Relation -->
-        <section id="relation" class="mb-12">
-          <h3 class="text-xl font-semibold">ตำแหน่งประธานฝ่ายนิสิตสัมพันธ์</h3>
-          <p class="text-gray-600 mb-6">
-            กรุณาเลือก รับรอง ไม่รับรอง หรืองดออกเสียง
-          </p>
-
-          <div class="flex h-32 mb-6 gap-1">
-            <div
-              class="flex flex-col w-1/5 items-center justify-center bg-purple-100 shadow-lg"
-            >
-              <span class="text-sm font-bold text-purple-900">หมายเลข</span>
-              <span class="text-2xl font-bold text-purple-900">1</span>
-            </div>
-
-            <div class="p-3 w-3/5 bg-white shadow-lg">
-              <p class="font-bold text-sm">พรรค Sci-Served</p>
-              <p class="font-bold text-sm">นางสาวนันท์นภัส หงษ์แปด</p>
-              <br />
-              <p class="text-gray-600 text-xs">
-                หลักสูตรเทคโนโลยีชีวภาพ (นานาชาติ)
-              </p>
-              <p class="text-gray-600 text-xs">ชั้นปีที่ 2</p>
-            </div>
-            <Image
-              src="/images/04_ฝ่ายนิสิตสัมพันธ์.webp"
-              alt="Candidate"
-              class="object-cover shadow-lg bg-white"
-              height={32}
-              width={96}
-            />
-          </div>
-
-          <div class="space-y-2">
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="relation"
-                value="approve"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-                required
-              />
-              <span class="text-gray-700">รับรอง</span>
-            </label>
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="relation"
-                value="disapprove"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-              />
-              <span class="text-gray-700">ไม่รับรอง</span>
-            </label>
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="relation"
-                value="abstain"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-              />
-              <span class="text-gray-700">งดออกเสียง</span>
-            </label>
-          </div>
-        </section>
-        <hr class="my-8 border-gray-300" />
-
-        <!-- Head of Sport -->
-        <section id="sport" class="mb-12">
-          <h3 class="text-xl font-semibold">ตำแหน่งประธานฝ่ายกีฬา</h3>
-          <p class="text-gray-600 mb-6">
-            กรุณาเลือก รับรอง ไม่รับรอง หรืองดออกเสียง
-          </p>
-
-          <div class="flex h-32 mb-6 gap-1">
-            <div
-              class="flex flex-col w-1/5 items-center justify-center bg-purple-100 shadow-lg"
-            >
-              <span class="text-sm font-bold text-purple-900">หมายเลข</span>
-              <span class="text-2xl font-bold text-purple-900">1</span>
-            </div>
-
-            <div class="p-3 w-3/5 bg-white shadow-lg">
-              <p class="font-bold text-sm">พรรค Sci-Served</p>
-              <p class="font-bold text-sm">นางสาวเสาวลักษณ์ สังข์ขาว</p>
-              <br />
-              <p class="text-gray-600 text-xs">ภาควิชาวัสดุศาสตร์</p>
-              <p class="text-gray-600 text-xs">ชั้นปีที่ 3</p>
-            </div>
-            <Image
-              src="/images/05_ฝ่ายกีฬา.webp"
-              alt="Candidate"
-              class="object-cover shadow-lg bg-white"
-              height={32}
-              width={96}
-            />
-          </div>
-
-          <div class="space-y-2">
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="sport"
-                value="approve"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-                required
-              />
-              <span class="text-gray-700">รับรอง</span>
-            </label>
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="sport"
-                value="disapprove"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-              />
-              <span class="text-gray-700">ไม่รับรอง</span>
-            </label>
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="sport"
-                value="abstain"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-              />
-              <span class="text-gray-700">งดออกเสียง</span>
-            </label>
-          </div>
-        </section>
-        <hr class="my-8 border-gray-300" />
-
-        <!-- Head of academic -->
-        <section id="academic" class="mb-12">
-          <h3 class="text-xl font-semibold">ตำแหน่งประธานฝ่ายวิชาการ</h3>
-          <p class="text-gray-600 mb-6">
-            กรุณาเลือก รับรอง ไม่รับรอง หรืองดออกเสียง
-          </p>
-
-          <div class="flex h-32 mb-6 gap-1">
-            <div
-              class="flex flex-col w-1/5 items-center justify-center bg-purple-100 shadow-lg"
-            >
-              <span class="text-sm font-bold text-purple-900">หมายเลข</span>
-              <span class="text-2xl font-bold text-purple-900">1</span>
-            </div>
-
-            <div class="p-3 w-3/5 bg-white shadow-lg">
-              <p class="font-bold text-sm">พรรค Sci-Served</p>
-              <p class="font-bold text-sm">นางสาวรณิดา สูงสุมาลย์</p>
-              <br />
-              <p class="text-gray-600 text-xs">ภาควิชาเคมี</p>
-              <p class="text-gray-600 text-xs">ชั้นปีที่ 2</p>
-            </div>
-            <Image
-              src="/images/06_ฝ่ายวิชาการ.webp"
-              alt="Candidate"
-              class="object-cover shadow-lg bg-white"
-              height={32}
-              width={96}
-            />
-          </div>
-
-          <div class="space-y-2">
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="academic"
-                value="approve"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-                required
-              />
-              <span class="text-gray-700">รับรอง</span>
-            </label>
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="academic"
-                value="disapprove"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-              />
-              <span class="text-gray-700">ไม่รับรอง</span>
-            </label>
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="academic"
-                value="abstain"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-              />
-              <span class="text-gray-700">งดออกเสียง</span>
-            </label>
-          </div>
-        </section>
-        <hr class="my-8 border-gray-300" />
-
-        <!-- Head of Development -->
-        <section id="development" class="mb-12">
-          <h3 class="text-xl font-semibold">
-            ตำแหน่งประธานฝ่ายพัฒนาสังคมและบำเพ็ญประโยชน์
-          </h3>
-          <p class="text-gray-600 mb-6">
-            กรุณาเลือก รับรอง ไม่รับรอง หรืองดออกเสียง
-          </p>
-
-          <div class="flex h-32 mb-6 gap-1">
-            <div
-              class="flex flex-col w-1/5 items-center justify-center bg-purple-100 shadow-lg"
-            >
-              <span class="text-sm font-bold text-purple-900">หมายเลข</span>
-              <span class="text-2xl font-bold text-purple-900">1</span>
-            </div>
-
-            <div class="p-3 w-3/5 bg-white shadow-lg">
-              <p class="font-bold text-sm">พรรค Sci-Served</p>
-              <p class="font-bold text-sm">นายวราวิชญ์ เชื้อสุวรรณรักษ์</p>
-              <br />
-              <p class="text-gray-600 text-xs">ภาควิชาวิทยาศาสตร์สิ่งแวดล้อม</p>
-              <p class="text-gray-600 text-xs">ชั้นปีที่ 3</p>
-            </div>
-            <Image
-              src="/images/07_ฝ่ายพัฒน์.webp"
-              alt="Candidate"
-              class="object-cover shadow-lg bg-white"
-              height={32}
-              width={96}
-            />
-          </div>
-
-          <div class="space-y-2">
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="development"
-                value="approve"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-                required
-              />
-              <span class="text-gray-700">รับรอง</span>
-            </label>
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="development"
-                value="disapprove"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-              />
-              <span class="text-gray-700">ไม่รับรอง</span>
-            </label>
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="development"
-                value="abstain"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-              />
-              <span class="text-gray-700">งดออกเสียง</span>
-            </label>
-          </div>
-        </section>
-        <hr class="my-8 border-gray-300" />
-
-        <!-- Head of Treasurer -->
-        <section id="treasurer" class="mb-12">
-          <h3 class="text-xl font-semibold">ตำแหน่งเหรัญญิก</h3>
-          <p class="text-gray-600 mb-6">
-            กรุณาเลือก รับรอง ไม่รับรอง หรืองดออกเสียง
-          </p>
-
-          <div class="flex h-32 mb-6 gap-1">
-            <div
-              class="flex flex-col w-1/5 items-center justify-center bg-purple-100 shadow-lg"
-            >
-              <span class="text-sm font-bold text-purple-900">หมายเลข</span>
-              <span class="text-2xl font-bold text-purple-900">1</span>
-            </div>
-
-            <div class="p-3 w-3/5 bg-white shadow-lg">
-              <p class="font-bold text-sm">พรรค Sci-Served</p>
-              <p class="font-bold text-sm">นายชญานนท์ กุลวิภัชวัฒนา</p>
-              <br />
-              <p class="text-gray-600 text-xs">ภาควิชาเคมีเทคนิค</p>
-              <p class="text-gray-600 text-xs">ชั้นปีที่ 2</p>
-            </div>
-            <Image
-              src="/images/08_เหรัญญิก.webp"
-              alt="Candidate"
-              class="object-cover shadow-lg bg-white"
-              height={32}
-              width={96}
-            />
-          </div>
-
-          <div class="space-y-2">
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="treasurer"
-                value="approve"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-                required
-              />
-              <span class="text-gray-700">รับรอง</span>
-            </label>
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="treasurer"
-                value="disapprove"
-                class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
-              />
-              <span class="text-gray-700">ไม่รับรอง</span>
-            </label>
-            <label class="flex items-center space-x-3">
-              <input
-                type="radio"
-                name="treasurer"
+                name="art"
                 value="abstain"
                 class="form-radio h-5 w-5 text-yellow checked:bg-yellow checked:border-yellow focus:ring-yellow"
               />
@@ -600,14 +210,8 @@ import Image from "astro/components/Image.astro";
         const formData = new FormData(voteForm);
         const voteData = {};
         const positions = [
-          "president",
-          "vice1",
-          "vice2",
-          "relation",
-          "sport",
-          "academic",
-          "development",
-          "treasurer",
+          "secretary",
+          "art"
         ];
 
         // ตรวจสอบว่าทุกตำแหน่งถูกเลือก

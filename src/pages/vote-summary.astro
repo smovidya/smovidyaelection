@@ -84,85 +84,25 @@ import Logo from "@/pics/main/SmoElectionLogo.webp";
     }
 
     const candidates = {
-      president: {
-        position: "ตำแหน่งนายกสโมสร",
-        studentId: "6534304723",
+      secretary: {
+        position: "ตำแหน่งเลขานุการ",
+        studentId: "6534139523",
         number: 1,
-        party: "Sci-Served",
-        name: "นายจามิน จันทรสุวรรณ",
-        department: "ภาควิชาคณิตศาสตร์และคอมพิวเตอร์",
-        year: "ชั้นปีที่ 3",
-        image: "/images/01_นายก.webp",
-      },
-      vice1: {
-        position: "ตำแหน่งอุปนายกคนที่ 1",
-        number: 1,
-        studentId: "6531306423",
-        party: "Sci-Served",
-        name: "นายกิตติพัศ สิริเจิมจิตร",
-        department: "ภาควิชาจุลชีววิทยา",
-        year: "ชั้นปีที่ 3",
-        image: "/images/02_อุป 1.webp",
-      },
-      vice2: {
-        position: "ตำแหน่งอุปนายกคนที่ 2",
-        number: 1,
-        studentId: "6534357023",
-        party: "Sci-Served",
-        name: "นางสาวเอมอร พรมเพ็ง",
-        department: "ภาควิชาคณิตศาสตร์และคอมพิวเตอร์",
-        year: "ชั้นปีที่ 3",
-        image: "/images/03_อุป 2.webp",
-      },
-      relation: {
-        position: "ตำแหน่งประธานฝ่ายนิสิตสัมพันธ์",
-        number: 1,
-        party: "Sci-Served",
-        studentId: "6638029023",
-        name: "นางสาวนันท์นภัส หงษ์แปด",
-        department: "หลักสูตรเทคโนโลยีชีวภาพ (นานาชาติ)",
-        year: "ชั้นปีที่ 2",
-        image: "/images/04_ฝ่ายนิสิตสัมพันธ์.webp",
-      },
-      sport: {
-        position: "ตำแหน่งประธานฝ่ายกีฬา",
-        number: 1,
-        party: "Sci-Served",
-        studentId: "6634095623",
-        name: "นางสาวเสาวลักษณ์ สังข์ขาว",
-        department: "ภาควิชาวัสดุศาสตร์",
-        year: "ชั้นปีที่ 3",
-        image: "/images/05_ฝ่ายกีฬา.webp",
-      },
-      academic: {
-        position: "ตำแหน่งประธานฝ่ายวิชาการ",
-        number: 1,
-        party: "Sci-Served",
-        studentId: "6532334123",
-        name: "นางสาวรณิดา สูงสุมาลย์",
+        party: "Sci-pernova",
+        name: "นายอนุชา สร้อยแสง",
         department: "ภาควิชาเคมี",
-        year: "ชั้นปีที่ 2",
-        image: "/images/06_ฝ่ายวิชาการ.webp",
-      },
-      development: {
-        position: "ตำแหน่งประธานฝ่ายพัฒนาสังคมและบำเพ็ญประโยชน์",
-        number: 1,
-        party: "Sci-Served",
-        studentId: "6533279523",
-        name: "นายวราวิชญ์ เชื้อสุวรรณรักษ์",
-        department: "ภาควิชาวิทยาศาสตร์สิ่งแวดล้อม",
         year: "ชั้นปีที่ 3",
-        image: "/images/07_ฝ่ายพัฒน์.webp",
+        image: "/images/09_เลขา.jpg",
       },
-      treasurer: {
-        position: "ตำแหน่งเหรัญญิก",
+    art: {
+        position: "ตำแหน่งประธานฝ่ายศิลปะและวัฒนธรรม",
+        studentId: "6531030123",
         number: 1,
-        party: "Sci-Served",
-        studentId: "6632417723",
-        name: "นายชญานนท์ กุลวิภัชวัฒนา",
-        department: "ภาควิชาเคมีเทคนิค",
-        year: "ชั้นปีที่ 2",
-        image: "/images/08_เหรัญญิก.webp",
+        party: "Sci-pernova",
+        name: "นางสาวณิชาภัทร ขอนแก่นง",
+        department: "ภาควิชาชีววิทยา",
+        year: "ชั้นปีที่ 3",
+        image: "/images/09_สินวัต.JPEG",
       },
     };
 
@@ -227,43 +167,43 @@ import Logo from "@/pics/main/SmoElectionLogo.webp";
         const allPositions = [
           {
             apiField: "president",
-            voteKey: "president",
+            voteKey: null,
           },
           {
             apiField: "vice-president-1",
-            voteKey: "vice1",
+            voteKey: null,
           },
           {
             apiField: "vice-president-2",
-            voteKey: "vice2",
+            voteKey: null,
           },
           {
             apiField: "secretary",
-            voteKey: null, // ไม่มีในฟอร์ม
+            voteKey: "secretary", // ไม่มีในฟอร์ม
           },
           {
             apiField: "treasurer",
-            voteKey: "treasurer",
+            voteKey: null,
           },
           {
             apiField: "student-relations",
-            voteKey: "relation",
+            voteKey: null,
           },
           {
             apiField: "academic",
-            voteKey: "academic",
+            voteKey: null,
           },
           {
             apiField: "public-service",
-            voteKey: "development",
+            voteKey: null,
           },
           {
             apiField: "art",
-            voteKey: null, // ไม่มีในฟอร์ม
+            voteKey: "art",
           },
           {
             apiField: "sport",
-            voteKey: "sport",
+            voteKey: null,
           },
         ];
 
