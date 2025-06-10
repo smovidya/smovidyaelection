@@ -4,27 +4,20 @@ import VoterCount from "@/components/VoterCount.astro";
 import Box from "@/pics/main/BoxIcon.webp";
 import Logo from "@/pics/main/SmoElectionLogo.webp";
 import Line from "@/pics/main/line.webp";
-import President from "@/pics/main/par1/01_president.webp";
-import VicePresident1 from "@/pics/main/par1/02_vicepresident1.webp";
-import VicePresident2 from "@/pics/main/par1/03_vicepresident2.webp";
-import StudentRelations from "@/pics/main/par1/04_studentrelations.webp";
-import Sport from "@/pics/main/par1/05_sport.webp";
-import Academic from "@/pics/main/par1/06_academic.webp";
-import PublicService from "@/pics/main/par1/07_publicservice.webp";
-import Treasurer from "@/pics/main/par1/08_treasurer.webp";
+import Secretary from "@/pics/main/par2/Nucha_lekha.webp";
+import Arts from "@/pics/main/par2/Por_artsci.webp";
 import Carousel from "./Carousel.astro";
 import CountdownTimer from "./CountdownTimer.astro";
 
 const Policies = [
 	{
-		name: "นโยบายพรรค Sci-Served ",
+		name: "นโยบายพรรค Sci-pernova ",
 		policies: [
 			{
-				title: "พวกเราพรรค Sci-Served จะบริหารสโมสรฯ ด้วยวิสัยทัศน์ดังต่อไปนี้",
+				title: "พวกเรา Sci-pernova พร้อมที่จะ",
 				details: [
-					"สโมสรนิสิตคณะวิทยาศาสตร์ต้องเป็นองค์กรที่เข้าถึงได้ง่าย ใกล้ชิดและอยู่เคียงข้างนิสิตในคณะทุกคน พร้อมรับฟังปัญหาต่าง ๆ ภายในคณะ และนํามาแก้ไข พัฒนาในการดําเนินงานต่อไปอย่างมีประสิทธิภาพ",
-					"สโมสรนิสิตคณะวิทยาศาสตร์ ต้องเป็นพื้นที่ที่เปิดกว้างให้นิสิตทุกคนในคณะได้เข้ามาเรียนรู้ ฝึกฝน และพัฒนา ทักษะด้านต่าง ๆ ในการปฏิบัติงาน รวมถึงได้รับความสัมพันธ์มิตรภาพที่ดีกลับไป",
-					"โครงการต่าง ๆ ภายใต้สโมสรนิสิตคณะวิทยาศาสตร์ ต้องดําเนินงานอย่างมีประสิทธิภาพโดยคํานึงถึงผลประโยชน์ ของนิสิตในคณะเป็นสําคัญ และดูแลเอาใจใส่ ไม่ละเลยสุขภาวะของนิสิตผู้ปฏิบัติงานทุกคน",
+					"เข้าถึงอย่างเข้าใจนิสิตคณะวิทยาศาสตร์ ทุกภาควิชาต้องเข้าถึงเลขานุการและข้อมูลการประชุมได้โดยง่าย ทุกคนในทุกโครงการ ต้องได้รับมิตรภาพและประสบการณ์ที่ดีกลับไปเสมอ ",
+					"ผลักดันอย่างมุ่งมั่น พร้อมที่จะเปิดรับความคิดเห็นและสนับสนุนเพื่อพัฒนากิจกรรม สวัสดิการ และศักยภาพของนิสิตคณะวิทยาศาสตร์ ไม่ว่าจะเป็นชมรม ภาควิชา หรือนิสิตฯ คนใดก็ตาม",
 				],
 			},
 		],
@@ -32,14 +25,8 @@ const Policies = [
 ];
 
 const Party = [
-	{ num: "1", role: "นายกสโมสรนิสิต", routing: "/candidates/president", pic: President },
-	{ num: "1", role: "อุปนายกคนที่ 1", routing: "/candidates/vicepresident1", pic: VicePresident1 },
-	{ num: "1", role: "อุปนายกคนที่ 2", routing: "/candidates/vicepresident2", pic: VicePresident2 },
-	{ num: "1", role: "ประธานฝ่าย\nนิสิตสัมพันธ์", routing: "/candidates/studentaffairs", pic: StudentRelations },
-	{ num: "1", role: "ประธานฝ่ายกีฬา", routing: "/candidates/sports", pic: Sport },
-	{ num: "1", role: "ประธานฝ่ายวิชาการ", routing: "/candidates/academic", pic: Academic },
-	{ num: "1", role: "ประธานฝ่าย\nพัฒนาสังคม\nและบําเพ็ญประโยชน์", routing: "/candidates/social", pic: PublicService },
-	{ num: "1", role: "เหรัญญิก", routing: "/candidates/treasurer", pic: Treasurer },
+	{ num: "1", role: "เลขานุการ", routing: "/candidates/secretary", pic: Secretary },
+	{ num: "1", role: "ประธานฝ่ายศิลปะและวัฒนธรรม", routing: "/candidates/arts", pic: Arts },
 ];
 ---
 
